@@ -122,9 +122,7 @@ const GifPage = () => {
                 <div className="faded-text">@{gif?.user?.username}</div>
               </div>
 
-              <button className="ml-auto" onClick={shareGif}>
-                <FaPaperPlane size={25} />
-              </button>
+              
             </div>
             {/* -- Mobile UI -- */}
           </div>
@@ -141,20 +139,6 @@ const GifPage = () => {
                 }`}
               />
               Favorite
-            </button>
-            <button
-              onClick={shareGif} // Assignment
-              className="flex gap-6 items-center font-bold text-lg"
-            >
-              <FaPaperPlane size={25} />
-              Share
-            </button>
-            <button
-              onClick={EmbedGif} // Assignment
-              className="flex gap-5 items-center font-bold text-lg"
-            >
-              <IoCodeSharp size={30} />
-              Embed
             </button>
           </div>
         </div>

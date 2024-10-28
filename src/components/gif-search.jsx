@@ -1,8 +1,6 @@
-/* eslint-disable react/prop-types */
-
-import {useState} from "react";
-import {HiMiniXMark, HiOutlineMagnifyingGlass} from "react-icons/hi2";
-import {useNavigate} from "react-router-dom";
+import { useState } from "react";
+import { HiMiniXMark, HiOutlineMagnifyingGlass } from "react-icons/hi2";
+import { useNavigate } from "react-router-dom";
 
 const GifSearch = () => {
   const [query, setQuery] = useState("");
@@ -17,27 +15,27 @@ const GifSearch = () => {
   };
 
   return (
-    <div className="flex relative">
+    <div className="flex relative search-wrap">
       <input
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search all the GIFs and Stickers"
-        className="w-full pl-4 pr-14 py-5 text-xl text-black rounded-tl rounded-bl border border-gray-300 outline-none"
+        className="w-full pl-2 pr-8 py-3 text-lg text-black rounded-tl rounded-bl border border-gray-300 outline-none"
       />
       {query && (
         <button
           onClick={() => setQuery("")}
-          className="absolute bg-gray-300 opacity-90 rounded-full right-20 mr-2 top-6"
+          className="absolute bg-gray-300 opacity-90 rounded-full right-16 mr-2 top-3"
         >
-          <HiMiniXMark size={22} />
+          <HiMiniXMark size={18} />
         </button>
       )}
       <button
         onClick={searchGIFs}
-        className="bg-gradient-to-tr from-pink-600 to-pink-400 text-white px-4 py-2 rounded-tr rounded-br"
+        className="bg-gradient-to-tr from-pink-600 to-pink-400 text-white px-3 py-1 rounded-tr rounded-br"
       >
-        <HiOutlineMagnifyingGlass size={35} className="-scale-x-100" />
+        <HiOutlineMagnifyingGlass size={25} className="-scale-x-100" />
       </button>
     </div>
   );

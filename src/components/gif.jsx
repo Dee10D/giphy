@@ -2,6 +2,7 @@
 
 import {Link} from "react-router-dom";
 
+
 const Gif = ({gif, hover = true}) => {
   return (
     <Link to={`/${gif.type}s/${gif.slug}`} key={gif.id}>

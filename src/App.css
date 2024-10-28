@@ -13,3 +13,12 @@
     @apply w-full h-0.5 my-6 bg-gray-800;
   }
 }
+
+
+/* custom css */
+
+.search-wrap{
+  border: 15px solid transparent;
+  border-image: linear-gradient(to right, #ec2F4B, #009FFF) 1;
+  border-radius: 8px;
+}
